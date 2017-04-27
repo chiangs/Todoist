@@ -4,7 +4,8 @@ angular.module('todo').component('todoList', {
 		var vm = this;
 		vm.todos = [];
 		
-		vm.todos = todoService.index();
+		vm.showTable = true;
+		vm.selected = null;
 		
 		vm.getNumIncomplete = function() {
 			var counter = 0;
@@ -17,12 +18,29 @@ angular.module('todo').component('todoList', {
 		}
 		
 		vm.addToList = function(object) {
-			todoService.create(object);
-			vm.todos = todoService.index();
+			todoService.create(object).then(function(res){				
+				vm.reload();
+			});
 		}
 		
-		vm.showTable = true;
-		vm.selected = null;
+		vm.deleteTodo = function(todo) {
+			todoService.destroy(todo.id).then(function(res){
+				vm.reload();
+			});
+		}
+		
+		vm.updateTodo = function(todo) {
+			todoService.update(todo).then(function(res){
+				vm.reload();
+			});
+		}
+
+		vm.reload = function() {
+			todoService.index().then(function(res){
+				vm.todos = res.data;
+			});
+		}
+		
 		
 		vm.displayTodo = function(todo) {
 			vm.showTable = false;
@@ -34,16 +52,7 @@ angular.module('todo').component('todoList', {
 			vm.selected = null;
 		}
 		
-		vm.updateTodo = function(todo) {
-			todoService.update(todo);
-			vm.todos = todoService.index();
-		}
-		
-		vm.deleteTodo = function(todo) {
-			todoService.destroy(todo.id);
-			vm.todos = todoService.index();
-		}
-	
+		vm.reload();
 	},
 		controllerAs : 'vm'
 })

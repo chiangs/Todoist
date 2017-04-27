@@ -1,12 +1,15 @@
 package entities;
 
-import java.util.List;
+import java.util.Set;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 public class User {
@@ -19,8 +22,9 @@ public class User {
 	
 	private String password;
 	
-	@OneToMany(mappedBy="user")
-	private List<Todo> todos;
+	@JsonManagedReference
+	@OneToMany(mappedBy="user", fetch = FetchType.EAGER)
+	private Set<Todo> todos;
 
 	//toString
 	@Override
@@ -49,11 +53,11 @@ public class User {
 		return id;
 	}
 
-	public List<Todo> getTodos() {
+	public Set<Todo> getTodos() {
 		return todos;
 	}
 
-	public void setTodos(List<Todo> todos) {
+	public void setTodos(Set<Todo> todos) {
 		this.todos = todos;
 	}
 	

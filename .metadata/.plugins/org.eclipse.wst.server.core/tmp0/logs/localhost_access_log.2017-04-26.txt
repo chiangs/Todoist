@@ -1484,3 +1484,7 @@
 0:0:0:0:0:0:0:1 - - [26/Apr/2017:15:44:12 -0600] "GET /ngHandsOn/js/angular.min.js.map HTTP/1.1" 200 428107
 0:0:0:0:0:0:0:1 - - [26/Apr/2017:15:44:12 -0600] "GET /ngHandsOn/app/pokedex/poketable/pokeTable.component.html HTTP/1.1" 200 319
 0:0:0:0:0:0:0:1 - - [26/Apr/2017:15:44:12 -0600] "GET /ngHandsOn/app/pokedex/pokemon/pokemon.component.html HTTP/1.1" 200 287
+127.0.0.1 - - [26/Apr/2017:21:44:33 -0600] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [26/Apr/2017:21:44:34 -0600] "GET /RESTTodo/ HTTP/1.1" 404 1012
+0:0:0:0:0:0:0:1 - - [26/Apr/2017:21:44:45 -0600] "GET /RESTTodo//api/ping HTTP/1.1" 500 10455
+0:0:0:0:0:0:0:1 - - [26/Apr/2017:21:46:48 -0600] "GET /RESTTodo//api/ping HTTP/1.1" 200 5

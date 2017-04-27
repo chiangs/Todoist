@@ -12,11 +12,11 @@
 		<th>Status</th>
 		<th>Delete</th>
 	</tr>
-	<tr ng-repeat = "td in vm.todos">
+	<tr ng-repeat = "td in vm.todos | orderBy:'id'">
 		<td>{{td.id}}</td>
 		<td ng-click="vm.displayTodo(td)">{{td.task}}</td>
 		<td ng-click="vm.displayTodo(td)">{{td.description}}</td>
-		<td><input type="checkbox" name="mark" ng-model="td.completed"></td>
+		<td><input type="checkbox" name="mark" ng-model="td.completed" ng-change="vm.updateTodo(td)"></td>
 		<td>{{td.completed}}</td>
 		<td><button type="submit" class="btn btn-danger" ng-click="vm.deleteTodo(td)">x</button></td>
 	</tr>
