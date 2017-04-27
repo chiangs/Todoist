@@ -1,9 +1,0 @@
-angular.module('todo')
-	.component('todoShow', {
-	templateUrl: 'app/todo/todoShow/todoShow.component.html',
-		var vm = this;
-	},
-	controllerAs : 'vm',
-	bindings : {
-	}
-})

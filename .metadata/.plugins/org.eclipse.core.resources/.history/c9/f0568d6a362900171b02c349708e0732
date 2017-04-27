@@ -1,9 +1,0 @@
-angular.module('productModule')
-	.component('productList', {
-		templateUrl : 'app/productModule/productList/productList.component.html',
-		controller : function() {
-			var vm = this;
-			
-		},
-		controllerAs : 'vw'
-})

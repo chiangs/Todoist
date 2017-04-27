@@ -1,6 +1,0 @@
-<ul>
-	<li>{{vm.list.imgUrl}}</li>
-	<li>{{vm.list.name}}</li>
-	<li>{{vm.list.price}}</li>
-	<li>{{vm.list.rating}}</li>
-</ul>

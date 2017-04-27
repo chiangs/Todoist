@@ -1,9 +1,0 @@
-<div class="focus">
-<h1>{{vm.pokemon.img}}</h1>
-<h2>{{vm.pokemon.name}}</h2>
-<p>{{vm.pokemon.weight}}</p>
-<p>{{vm.pokemon.height}}</p>
-<ul ng-repeat="t in vm.pokemon">
-	<li>{{t.type}}]</li>
-</ul>
-</div>

@@ -1,6 +1,0 @@
-angular.module('appModule')
-	.component('productCard', {
-		bindings : {
-			product : '<'
-		}
-	})

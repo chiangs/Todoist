@@ -1,6 +1,0 @@
-<ul style="text-decoration: none">
-	<li><img src='{{vm.product.imgUrl}}'></li>
-	<li>{{vm.product.name}}</li>
-	<li>{{vm.product.price}}</li>
-	<li>{{vm.product.rating}}</li>
-</ul>

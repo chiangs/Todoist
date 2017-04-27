@@ -1,4 +1,0 @@
-angular.module('appModule')
-	.component('productModule', {
-		templateUrl : 'app/productModule/productList/productList.component.html'
-})

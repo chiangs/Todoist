@@ -1,7 +1,0 @@
-<form>
-  <input type="text" placeholder="Name" ng-model="vm.log.name"/><br />
-  <input type="text" placeholder="Price" ng-model="vm.log.price"/><br />
-  <input type="text" placeholder="Image URL" ng-model="vm.log.imgUrl"/><br />
-  <input type="number" placeholder="rating" /><br />
-  <input type="submit" value="Add Item" />
-</form>
