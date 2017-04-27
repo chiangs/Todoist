@@ -1,0 +1,8 @@
+angular.module('pokedex').component('pokeTable', {
+	templateUrl : 'app/pokedex/poketable/pokeTable.component.html',
+	controller : function(pokeService) {
+		var vm = this;
+		
+		vm.pokemons = pokeService.index();
+	}	
+})

@@ -1,0 +1,12 @@
+<
+
+<table class="table" id="pokeTable">
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+	</tr>
+	<tr ng-repeat ="p in vm.pokemons">
+		<td>{{p.id}}</td>
+		<td>{{p.name}}</td>
+	</tr>
+</table>

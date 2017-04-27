@@ -1,0 +1,17 @@
+angular.module('todo')
+	.component('todoShow', {
+	templateUrl: 'app/todo/todoShow/todoShow.component.html',
+	controller : function() {
+		var vm = this;
+		
+		vm.editMode = false;
+		vm.setEditTodo = function() {
+			angular.copy(todo);
+		}
+	},
+	controllerAs : 'vm',
+	bindings : {
+		todo : '<',
+		goBack : '&'
+	}
+})

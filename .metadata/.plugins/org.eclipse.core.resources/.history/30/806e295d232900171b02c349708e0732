@@ -1,0 +1,6 @@
+angular.module('appModule')
+  .component('appComponent', {
+    template : `
+    <h1>Hello App Component</h1>
+    `
+  })

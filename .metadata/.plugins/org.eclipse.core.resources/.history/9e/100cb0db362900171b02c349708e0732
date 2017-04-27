@@ -1,0 +1,12 @@
+angular.module('productModule')
+	.component('productList', {
+		templateUrl : 'app/productModule/productList/productList.component.html',
+		controller : function() {
+			var vm = this;
+			
+			vm.list = {
+				'en', 'to', 'tre', 'fire'
+			};
+		},
+		controllerAs : 'vw'
+})

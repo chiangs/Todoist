@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+* h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+* h2, h3, h4, p, a, blockquote {
+    font-family: 'Quicksand', serif;
+}
+
+#greeting {
+	background-color: #262bce;
+	color: white;
+	padding: none;
+}
+
+#table {
+	width: 100%;
+	text-align: left;
+}
+
+#title {
+	background-color: black;
+	color: white;
+}
+
+#number {
+	color: red;
+}

@@ -1,0 +1,11 @@
+.DS_Store
+bin
+build
+target
+/.gradle/
+.gradle
+.metadata
+.recommenders/
+RemoteSystemsTempFiles/
+.RemoteSystemsTempFiles/
+.ngHandsOn

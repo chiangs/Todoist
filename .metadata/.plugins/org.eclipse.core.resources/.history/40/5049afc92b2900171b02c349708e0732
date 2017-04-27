@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="appModule">
+<head>
+  <title>Hands On</title>
+  <script src="js/angular.min.js"></script>
+  <script src="app/appModule/app.module.js"></script>
+  <script src="app/appModule/appComponent/app.component.js"></script>
+  <script src="app/productModule/product.module.js"></script>
+  <script src="app/productModule/productList/productList.component.js"></script>
+  
+</head>
+<body>
+
+</body>
+</html>

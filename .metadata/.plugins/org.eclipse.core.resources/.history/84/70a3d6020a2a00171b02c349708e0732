@@ -1,0 +1,32 @@
+<h1 id="title">ToDoist: <span id="number">{{vm.getNumIncomplete()}}</span></h1>
+
+<div>
+<todo-show todo="vm.selected" ng-show="vm.selected" go-back="vm.displayTable()" on-update="vm.updateTodo(todo)"></todo-show>
+
+<table class="table" id="table" ng-show="vm.showTable">
+	<tr scope="row">
+		<th>ID</th>
+		<th>Task</th>
+		<th>Description</th>
+		<th>Mark</th>
+		<th>Status</th>
+	</tr>
+	<tr ng-repeat = "td in vm.todos">
+		<td>{{td.id}}</td>
+		<td ng-click="vm.displayTodo(td)">{{td.task}}</td>
+		<td ng-click="vm.displayTodo(td)">{{td.description}}</td>
+		<td><input type="checkbox" name="mark" ng-model="td.completed"></td>
+		<td>{{td.completed}}</td>
+	</tr>
+</table>
+
+</div>
+
+<div id="form">
+<form ng-show="vm.showTable">
+	<input class="newTaskInput" type="text" ng-model="todos.task"/><br>
+	<input class="newTaskInput" type="text" ng-model="todos.description"/><br>
+	<input type="submit" value="Add ToDo" ng-click="vm.addToList(todos); todos={}"/>
+</form>
+
+</div>

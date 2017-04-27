@@ -1,0 +1,4 @@
+angular.module('appModule')
+	.component('productList', {
+		templateUrl : 'app/productModule/productList/productList.component.html'
+})

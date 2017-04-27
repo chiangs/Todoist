@@ -1,0 +1,3 @@
+<h2>Task: {{vm.todo.task}}</h2>
+<p>Description: {{vm.todo.description}}</p>
+<button type="submit" ng-click="vm.goBack()">Go Back</button>

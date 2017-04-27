@@ -1,0 +1,3 @@
+angular.module('todo').component('todoList', {
+	templateUrl : 'app/todo/todoList/todoList.component.html'
+})

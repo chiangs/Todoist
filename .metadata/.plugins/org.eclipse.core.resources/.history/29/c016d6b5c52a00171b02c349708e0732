@@ -1,0 +1,10 @@
+<div class="focus">
+<h1>Hello</h1>
+<h1>{{vm.disp.img}}</h1>
+<h2><img src={{vm.disp.name}}></h2>
+<p>{{vm.disp.weight}}</p>
+<p>{{vm.disp.height}}</p>
+<ul>
+	<li ng-repeat="t in vm.pokemon">{{t.type}}]</li>
+</ul>
+</div>

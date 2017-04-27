@@ -1,0 +1,7 @@
+<div id="form">
+<form>
+	<input type="text" ng-model="todos.task"/><br>
+	<input type="submit" value="Add ToDo" ng-click="vm.addToList(todos); todos={}"/>
+</form>
+
+</div>

@@ -1,0 +1,7 @@
+<form>
+  <input type="text" placeholder="Name" /><br />
+  <input type="text" placeholder="Price" /><br />
+  <input type="text" placeholder="Image URL" /><br />
+  <input type="number" placeholder="rating" /><br />
+  <input type="submit" value="Add Item" />
+</form>

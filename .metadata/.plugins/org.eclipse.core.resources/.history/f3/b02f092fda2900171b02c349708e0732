@@ -1,0 +1,18 @@
+#greeting {
+	background-color: #262bce;
+	color: white;
+}
+
+#table {
+	width: 100%;
+	text-align: left;
+}
+
+#title {
+	background-color: black;
+	color: white;
+}
+
+#number {
+	color: red;
+}

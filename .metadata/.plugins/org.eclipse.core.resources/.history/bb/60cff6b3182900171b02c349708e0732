@@ -1,0 +1,10 @@
+angular.module('appModule')
+  .component('appComponent', {
+    template : `
+      <ul>
+        <li>Yellow</li>
+        <li>Green</li>
+        <li>Plantain</li>
+      </ul>
+    `
+  })

@@ -1,0 +1,6 @@
+<ul>
+	<li>{{vm.product.imgUrl}}</li>
+	<li>{{vm.product.name}}</li>
+	<li>{{vm.product.price}}</li>
+	<li>{{vm.product.rating}}</li>
+</ul>

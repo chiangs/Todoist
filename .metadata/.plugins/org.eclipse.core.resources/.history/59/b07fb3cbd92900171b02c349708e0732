@@ -1,0 +1,13 @@
+#table {
+	width: 80%;
+	text-align: left;
+}
+
+#title {
+	background-color: black;
+	color: white;
+}
+
+#number {
+	color: blue;
+}

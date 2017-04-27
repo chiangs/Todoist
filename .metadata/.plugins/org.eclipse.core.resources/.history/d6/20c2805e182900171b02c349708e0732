@@ -1,0 +1,5 @@
+angular.module('appComponent').component('list' {
+	template: `
+	<h1>Hello App Component</h1>
+	`
+}) 

@@ -1,0 +1,8 @@
+<form>
+  <input type="text" placeholder="Name" ng-model="product.name"/><br />
+  <input type="text" placeholder="Price" ng-model="product.price"/><br />
+  <input type="text" placeholder="Image URL" ng-model="product.imgUrl"/><br />
+  <input type="number" placeholder="rating" ng-model="product.rating"/><br />
+  <input type="submit" value="Add Item" ng-click="vm.onCreate({prod : product}); product={};"/>
+  ng-click="vm.onCreate({poke : pokemon}); pokemon = {};">
+</form>

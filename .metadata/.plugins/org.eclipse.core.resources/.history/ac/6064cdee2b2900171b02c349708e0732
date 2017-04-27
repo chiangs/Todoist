@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="appModule">
+<head>
+  <title>Hands On</title>
+  <script src="js/angular.min.js"></script>
+  <script src="app/appModule/app.module.js"></script>
+  <script src="app/appModule/appComponent/app.component.js"></script>
+  <script src="app/todo/todo.module.js"></script>
+  <script src="app/todo/todoList.component.js"></script>
+  
+</head>
+<body>
+	 
+  <app-component>Loading...</app-component>
+  
+  <todo-List>
+</body>
+</html>

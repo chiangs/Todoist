@@ -1,0 +1,12 @@
+angular.module('productModule')
+	.component('productList', {
+		templateUrl : 'app/productModule/productList/productList.component.html',
+		controller : function() {
+			var vm = this;
+			
+			vm.list = {
+				list : 	'app/productModule/productList/productList.component.html'
+			};
+		},
+		controllerAs : 'vw'
+})

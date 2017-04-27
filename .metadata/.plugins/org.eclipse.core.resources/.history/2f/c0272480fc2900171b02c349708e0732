@@ -1,0 +1,9 @@
+<h2>Task: {{vm.todo.task}}</h2>
+<p>Description: {{vm.todo.description}}</p>
+<button type="submit" ng-click="vm.goBack()">Go Back</button>
+<button type="submit" ng-click="vm.setEditTodo()">Go Back</button>
+
+<form>
+	<input type="text" value="vm.task"/><br>
+	
+</form>
