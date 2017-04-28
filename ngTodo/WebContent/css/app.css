@@ -11,6 +11,22 @@
     font-family: 'Quicksand', serif;
 }
 
+#number {
+	color: red;
+}
+
+.danger {
+    color: rgb(239,122,131);
+}
+
+.warning {
+    color: rgb(246,186,99);
+}
+
+.safe {
+    color: rgb(130,167,177);
+}
+
 #title {
 	background-color: black;
 	color: white;
@@ -23,10 +39,6 @@
 	text-align: left;
 }
 
-
-#number {
-	color: red;
-}
 
 .newTaskInput {
 	border: none;

@@ -1,9 +1,11 @@
-angular.module('todo').factory('todoService', function($http) {
+angular.module('todo').factory('todoService',function($http,  $filter) {
 	var service = {};
 
 	var BASE_URL = 'http://localhost:8080/RESTTodo/api/user';
 
 	var todos = [];
+	
+	var completeDate = '';
 
 	service.index = function() {
 		return $http({
@@ -33,6 +35,11 @@ angular.module('todo').factory('todoService', function($http) {
 	}
 
 	service.update = function(todo) {
+		if (todo.completed == false) {
+			todo.completeDate = '';
+		} else {
+		todo.completeDate = $filter('date')(Date.now(), 'MM/dd/yyyy');
+		}
 		return $http({
 			method : 'PUT',
 			url : BASE_URL + '/1/todo/' + todo.id,

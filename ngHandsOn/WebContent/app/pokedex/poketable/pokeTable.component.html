@@ -1,11 +1,14 @@
+<span ng-repeat="t in vm.types" ng-click="vm.selectedType=t">|  {{t}}  </span>
+
 <pokemon ng-show="vm.selected" disp="vm.selected" display-table="vm.goBack()"></pokemon>
+
 
 <table class="table" id="pokeTable" ng-hide="vm.selected">
 	<tr>
 		<th>ID</th>
 		<th>Name</th>
 	</tr>
-	<tr ng-repeat ="p in vm.pokemons" >
+	<tr ng-repeat ="p in vm.pokemons | filterType: vm.selectedType | orderBy:'pokeId'" >
 		<td>{{p.pokeId}}</td>
 		<td ng-click="vm.showPokemon(p)">{{p.name}}</td>
 	</tr>

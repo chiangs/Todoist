@@ -6,7 +6,7 @@ angular.module('pokedex').factory('pokemonService', function($http){
 	service.index = function() {
 		return $http({
 			method : 'GET',
-			url: BASE_URL + '?sorted=true'
+			url: BASE_URL
 		})
 	}
 	

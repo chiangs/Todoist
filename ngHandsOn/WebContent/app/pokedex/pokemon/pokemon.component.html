@@ -2,8 +2,8 @@
 <h1>Hello</h1>
 <h2><img src="{{vm.disp.img}}"></h2>
 <h2>{{vm.disp.name}}</h2>
-<p>{{vm.disp.weight}}</p>
-<p>{{vm.disp.height}}</p>
+<p>{{vm.disp.weight | number:1}}</p>
+<p>{{vm.disp.height | number:2}}</p>
 <ul>
 	<li ng-repeat="t in vm.disp.types">{{t.name}}</li>
 </ul>

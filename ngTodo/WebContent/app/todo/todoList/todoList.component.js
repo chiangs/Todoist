@@ -1,13 +1,13 @@
 angular.module('todo').component('todoList', {
 	templateUrl : 'app/todo/todoList/todoList.component.html',
-	controller : function(todoService) {
+	controller : function(todoService, $filter) {
 		var vm = this;
 		vm.todos = [];
 		
 		vm.showTable = true;
 		vm.selected = null;
 		
-		vm.getNumIncomplete = function() {
+		vm.countTodos = function() {
 			var counter = 0;
 			for (var i = 0; i < vm.todos.length; i++) {
 				if (vm.todos[i].completed == false) {
@@ -52,6 +52,14 @@ angular.module('todo').component('todoList', {
 			vm.selected = null;
 		}
 		
+		vm.accomplishmentStatus = function() {
+			var numDone = vm.countTodos();
+			if (numDone > 10)
+				return 'danger';
+			if (numDone > 5)
+				return 'warning';
+			return 'safe';
+		}
 		vm.reload();
 	},
 		controllerAs : 'vm'
