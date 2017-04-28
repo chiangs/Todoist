@@ -1,5 +1,5 @@
 <h1 id="title">Incomplete: <span ng-class="vm.accomplishmentStatus()">{{vm.countTodos()}}</span></h1>
-<label for="showAll">Show all To Dos: </label> <input type="checkbox" name="showAll" ng-model="vm.showComplete">
+<label for="showAll">Show all: </label> <input type="checkbox" name="showAll" ng-model="vm.showAll">
 
 <div>
 <todo-show todo="vm.selected" ng-show="vm.selected" go-back="vm.displayTable()" on-update="vm.updateTodo(todo)"></todo-show>
@@ -14,7 +14,7 @@
 		<th>Complete Date</th>
 		<th>Delete</th>
 	</tr>
-	<tr ng-repeat = "td in vm.todos | incompleteFilter:vm.showComplete | date:'MM/dd/yyyy' | orderBy:'id'">
+	<tr ng-repeat = "td in vm.todos | incompleteFilter:vm.showAll | date:'MM/dd/yyyy' | orderBy:'id'">
 		<td>{{td.id}}</td>
 		<td ng-click="vm.displayTodo(td)" ng-class="vm.statusLine(td)">{{td.task}}</td>
 		<td ng-click="vm.displayTodo(td)">{{td.description}}</td>

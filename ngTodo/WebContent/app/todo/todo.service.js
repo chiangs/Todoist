@@ -15,6 +15,13 @@ angular.module('todo').factory('todoService',function($http,  $filter) {
 			return res;
 		})
 	}
+	
+	service.show = function(id) {
+		return $http({
+			method : 'GET',
+			url : BASE_URL + '/1/todo/' + id
+		})
+	}
 
 	service.create = function(todo) {
 		return $http({
