@@ -60,6 +60,13 @@ angular.module('todo').component('todoList', {
 				return 'warning';
 			return 'safe';
 		}
+		
+		vm.statusLine = function(td) {
+			if (td.completed == true) {
+				return 'donesky';
+			}
+		}
+		
 		vm.reload();
 	},
 		controllerAs : 'vm'

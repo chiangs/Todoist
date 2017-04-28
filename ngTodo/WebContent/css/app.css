@@ -11,9 +11,9 @@
     font-family: 'Quicksand', serif;
 }
 
-#number {
+/* #number {
 	color: red;
-}
+} */
 
 .danger {
     color: rgb(239,122,131);
@@ -25,6 +25,10 @@
 
 .safe {
     color: rgb(130,167,177);
+}
+
+.donesky {
+	text-decoration: line-through;
 }
 
 #title {

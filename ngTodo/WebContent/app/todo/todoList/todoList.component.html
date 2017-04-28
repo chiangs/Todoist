@@ -16,7 +16,7 @@
 	</tr>
 	<tr ng-repeat = "td in vm.todos | incompleteFilter:vm.showComplete | date:'MM/dd/yyyy' | orderBy:'id'">
 		<td>{{td.id}}</td>
-		<td ng-click="vm.displayTodo(td)">{{td.task}}</td>
+		<td ng-click="vm.displayTodo(td)" ng-class="vm.statusLine(td)">{{td.task}}</td>
 		<td ng-click="vm.displayTodo(td)">{{td.description}}</td>
 		<td><input type="checkbox" name="mark" ng-model="td.completed" ng-change="vm.updateTodo(td)"></td>
 		<td>{{td.completed}}</td>
