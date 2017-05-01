@@ -136,3 +136,35 @@ span {
     background-color: #2f7a94 !important;
     font-style: italic;
 }
+
+#logout {
+	height: 50px;
+	border-radius: 0;
+}
+
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.70);
+}
+
+.modal-content a {
+	font-weight:  bold;
+	color: #fff;
+}
+	
+.modal-content a:hover {
+    color: rgb(255, 130, 0);
+    text-decoration: none;
+}
+
+.btn-link {
+    color: white;
+}
+
+.modal-heading h2 {
+    color: #fff;
+}
+
+.errors {
+	color: red;
+	text-align: center;
+}

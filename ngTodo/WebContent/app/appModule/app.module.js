@@ -1,4 +1,4 @@
-angular.module('appModule', [ 'todo', 'ngRoute', 'static', 'nav' ]).config(
+angular.module('appModule', [ 'todo', 'ngRoute', 'static', 'nav', 'authModule' ]).config(
 		function($routeProvider) {
 			$routeProvider.when('/', {
 				template : '<home></home>'
@@ -10,6 +10,10 @@ angular.module('appModule', [ 'todo', 'ngRoute', 'static', 'nav' ]).config(
 				template : '<todo-list></todo-list>'
 			}).when('/todo/:id', {
 				template : '<todo-show></todo-show>'
+			}).when('/register', {
+				template : '<register></register>'
+			}).when('/login', {
+				template : '<login></login>'
 			}).otherwise({
 				template : '<error></error>'
 			})

@@ -26,7 +26,7 @@ public class TodoController {
 		return "PONG!";
 	}
 
-	@RequestMapping(path = "user/{uid}/todos", method = RequestMethod.GET)
+	@RequestMapping(path = "user/{uid}/todo", method = RequestMethod.GET)
 	public Collection<Todo> index(HttpServletRequest req, HttpServletResponse res, @PathVariable int uid) {
 		res.setStatus(200);
 		return todoDAO.index(uid);
